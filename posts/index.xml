@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on JesusMtnez</title>
+    <link>https://jesusmtnez.es/posts/</link>
+    <description>Recent content in Posts on JesusMtnez</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 31 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://jesusmtnez.es/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Managing configuration with multiple git identities</title>
+      <link>https://jesusmtnez.es/posts/2018/07/managing-config-with-multiple-git-identities/</link>
+      <pubDate>Tue, 31 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>https://jesusmtnez.es/posts/2018/07/managing-config-with-multiple-git-identities/</guid>
+      <description>Git is a versioning control system tools for source code that we can find anywhere nowadays. I use it for almost everything: managing my dotfiles, in all my personal projects and, of course, at work. But using git at work, where it is very common to have multiple identities, could be quite tedious.&#xA;Problem Link to heading I use GitLab to manage all my personal projects, with a automatic mirror to my GitHub account.</description>
+    </item>
+    <item>
+      <title>My first talk: Slick 101 at ScalaMAD</title>
+      <link>https://jesusmtnez.es/posts/2017/02/my-first-talk/</link>
+      <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
+      <guid>https://jesusmtnez.es/posts/2017/02/my-first-talk/</guid>
+      <description>Last 30th January 2017 I had the opportunity to give a talk at ScalaMAD MeetUp. The talk I prepared was: Slick 101.&#xA;What is Slick? Link to heading “We don’t try to fight the relational model, we embrace it through a functional paradigm.”&#xA;Slick is a library for Scala that makes it easy to work with relational databases. It is not a ORM (Object-Relational Mapping) as other libraries or frameworks like Hibernate.</description>
+    </item>
+    <item>
+      <title>Initial commit - Welcome!</title>
+      <link>https://jesusmtnez.es/posts/2017/01/welcome-to-my-blog/</link>
+      <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://jesusmtnez.es/posts/2017/01/welcome-to-my-blog/</guid>
+      <description>Welcome!! Link to heading Welcome all of you to my personal blog. It has been a long time I wanted to start writing a personal blog to talk about my thoughts and adventures as a developer. After convincing my friend Rodrigo De Frutos, we decided start a blog on our own to learn about how this work and also learn about GitLab Pages (he uses GitHub pages). The main purpose of this blog is to write about all the knowledge and technologies I&amp;rsquo;m going to learn, and also about everything I found useful for my daily work or personal projects.</description>
+    </item>
+  </channel>
+</rss>

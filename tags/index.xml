@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on JesusMtnez</title>
+    <link>https://jesusmtnez.es/tags/</link>
+    <description>Recent content in Tags on JesusMtnez</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 31 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://jesusmtnez.es/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>config</title>
+      <link>https://jesusmtnez.es/tags/config/</link>
+      <pubDate>Tue, 31 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>https://jesusmtnez.es/tags/config/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>configuration</title>
+      <link>https://jesusmtnez.es/tags/configuration/</link>
+      <pubDate>Tue, 31 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>https://jesusmtnez.es/tags/configuration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>dotfiles</title>
+      <link>https://jesusmtnez.es/tags/dotfiles/</link>
+      <pubDate>Tue, 31 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>https://jesusmtnez.es/tags/dotfiles/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>git</title>
+      <link>https://jesusmtnez.es/tags/git/</link>
+      <pubDate>Tue, 31 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>https://jesusmtnez.es/tags/git/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>programming</title>
+      <link>https://jesusmtnez.es/tags/programming/</link>
+      <pubDate>Tue, 31 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>https://jesusmtnez.es/tags/programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>vcs</title>
+      <link>https://jesusmtnez.es/tags/vcs/</link>
+      <pubDate>Tue, 31 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>https://jesusmtnez.es/tags/vcs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>library</title>
+      <link>https://jesusmtnez.es/tags/library/</link>
+      <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
+      <guid>https://jesusmtnez.es/tags/library/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>meetup</title>
+      <link>https://jesusmtnez.es/tags/meetup/</link>
+      <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
+      <guid>https://jesusmtnez.es/tags/meetup/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>scala</title>
+      <link>https://jesusmtnez.es/tags/scala/</link>
+      <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
+      <guid>https://jesusmtnez.es/tags/scala/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>slick</title>
+      <link>https://jesusmtnez.es/tags/slick/</link>
+      <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
+      <guid>https://jesusmtnez.es/tags/slick/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>sql</title>
+      <link>https://jesusmtnez.es/tags/sql/</link>
+      <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
+      <guid>https://jesusmtnez.es/tags/sql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>talks</title>
+      <link>https://jesusmtnez.es/tags/talks/</link>
+      <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
+      <guid>https://jesusmtnez.es/tags/talks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>offtopic</title>
+      <link>https://jesusmtnez.es/tags/offtopic/</link>
+      <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://jesusmtnez.es/tags/offtopic/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

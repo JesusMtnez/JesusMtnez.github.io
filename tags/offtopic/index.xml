@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>offtopic on JesusMtnez</title>
+    <link>https://jesusmtnez.es/tags/offtopic/</link>
+    <description>Recent content in offtopic on JesusMtnez</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 08 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://jesusmtnez.es/tags/offtopic/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Initial commit - Welcome!</title>
+      <link>https://jesusmtnez.es/posts/2017/01/welcome-to-my-blog/</link>
+      <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://jesusmtnez.es/posts/2017/01/welcome-to-my-blog/</guid>
+      <description>Welcome!! Link to heading Welcome all of you to my personal blog. It has been a long time I wanted to start writing a personal blog to talk about my thoughts and adventures as a developer. After convincing my friend Rodrigo De Frutos, we decided start a blog on our own to learn about how this work and also learn about GitLab Pages (he uses GitHub pages). The main purpose of this blog is to write about all the knowledge and technologies I&amp;rsquo;m going to learn, and also about everything I found useful for my daily work or personal projects.</description>
+    </item>
+  </channel>
+</rss>

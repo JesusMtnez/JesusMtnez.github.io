@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>configuration on JesusMtnez</title>
+    <link>https://jesusmtnez.es/tags/configuration/</link>
+    <description>Recent content in configuration on JesusMtnez</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 31 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://jesusmtnez.es/tags/configuration/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Managing configuration with multiple git identities</title>
+      <link>https://jesusmtnez.es/posts/2018/07/managing-config-with-multiple-git-identities/</link>
+      <pubDate>Tue, 31 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>https://jesusmtnez.es/posts/2018/07/managing-config-with-multiple-git-identities/</guid>
+      <description>Git is a versioning control system tools for source code that we can find anywhere nowadays. I use it for almost everything: managing my dotfiles, in all my personal projects and, of course, at work. But using git at work, where it is very common to have multiple identities, could be quite tedious.&#xA;Problem Link to heading I use GitLab to manage all my personal projects, with a automatic mirror to my GitHub account.</description>
+    </item>
+  </channel>
+</rss>

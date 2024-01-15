@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  My first talk: Slick 101 at ScalaMAD · JesusMtnez
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Jesús Martínez-B. H.">
+<meta name="description" content="Last 30th January 2017 I had the opportunity to give a talk at ScalaMAD MeetUp. The talk I prepared was: Slick 101.
+What is Slick? Link to heading “We don’t try to fight the relational model, we embrace it through a functional paradigm.”
+Slick is a library for Scala that makes it easy to work with relational databases. It is not a ORM (Object-Relational Mapping) as other libraries or frameworks like Hibernate.">
+<meta name="keywords" content="blog,developer,personal">
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="My first talk: Slick 101 at ScalaMAD"/>
+<meta name="twitter:description" content="Last 30th January 2017 I had the opportunity to give a talk at ScalaMAD MeetUp. The talk I prepared was: Slick 101.
+What is Slick? Link to heading “We don’t try to fight the relational model, we embrace it through a functional paradigm.”
+Slick is a library for Scala that makes it easy to work with relational databases. It is not a ORM (Object-Relational Mapping) as other libraries or frameworks like Hibernate."/>
+
+<meta property="og:title" content="My first talk: Slick 101 at ScalaMAD" />
+<meta property="og:description" content="Last 30th January 2017 I had the opportunity to give a talk at ScalaMAD MeetUp. The talk I prepared was: Slick 101.
+What is Slick? Link to heading “We don’t try to fight the relational model, we embrace it through a functional paradigm.”
+Slick is a library for Scala that makes it easy to work with relational databases. It is not a ORM (Object-Relational Mapping) as other libraries or frameworks like Hibernate." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jesusmtnez.es/posts/2017/02/my-first-talk/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2017-02-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-02-28T00:00:00+00:00" />
+
+
+
+
+
+<link rel="canonical" href="https://jesusmtnez.es/posts/2017/02/my-first-talk/">
+
+
+<link rel="preload" href="https://jesusmtnez.es/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="https://jesusmtnez.es/css/coder.min.e1bdf152d93b060b06ba5d496486ed9c201a8b95d335e035beb5faebe3b61cad.css" integrity="sha256-4b3xUtk7BgsGul1JZIbtnCAai5XTNeA1vrX66&#43;O2HK0=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="https://jesusmtnez.es/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="https://jesusmtnez.es/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="https://jesusmtnez.es/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://jesusmtnez.es/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="https://jesusmtnez.es/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://jesusmtnez.es/images/apple-touch-icon.png">
+
+<link rel="manifest" href="https://jesusmtnez.es/site.webmanifest">
+<link rel="mask-icon" href="https://jesusmtnez.es/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-dark">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://jesusmtnez.es/">
+      JesusMtnez
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://jesusmtnez.es/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://jesusmtnez.es/resume/">Resume</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://jesusmtnez.es/posts/2017/02/my-first-talk/">
+              My first talk: Slick 101 at ScalaMAD
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2017-02-28T00:00:00Z">
+                February 28, 2017
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="https://jesusmtnez.es/categories/talks/">Talks</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="https://jesusmtnez.es/tags/scala/">scala</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="https://jesusmtnez.es/tags/talks/">talks</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="https://jesusmtnez.es/tags/slick/">slick</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="https://jesusmtnez.es/tags/library/">library</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="https://jesusmtnez.es/tags/sql/">sql</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="https://jesusmtnez.es/tags/programming/">programming</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="https://jesusmtnez.es/tags/meetup/">meetup</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>Last 30th January 2017 I had the opportunity to give a talk at <a href="https://www.meetup.com/Scala-Programming-Madrid/"  class="external-link" target="_blank" rel="noopener">ScalaMAD</a> MeetUp. The talk I prepared was: <strong><a href="https://goo.gl/4d5WQ1"  class="external-link" target="_blank" rel="noopener">Slick 101</a></strong>.</p>
+<h3 id="what-is-slickhttpslicklightbendcom">
+  What is <a href="http://slick.lightbend.com/"  class="external-link" target="_blank" rel="noopener">Slick</a>?
+  <a class="heading-link" href="#what-is-slickhttpslicklightbendcom">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<img style="display: block; margin-left: auto; margin-right: auto" src="https://jesusmtnez.es/images/slick-101/slick-logo.png">
+<blockquote>
+<p>“We don’t try to fight the relational model, we embrace it through a functional paradigm.”</p>
+</blockquote>
+<p><a href="http://slick.lightbend.com/"  class="external-link" target="_blank" rel="noopener">Slick</a> is a library for Scala that makes it easy to work with relational databases. It is not a ORM (Object-Relational Mapping) as other libraries or frameworks like Hibernate. Instead, <a href="http://slick.lightbend.com/"  class="external-link" target="_blank" rel="noopener">Slick</a> is a FRM (Functional Relational Mapping), which means it is implemented based on functional programming. Then main difference between FRM and ORM is that FRM does not hide the database in an abstraction layer like ORM. It gives us full control of our database and all the possible operations. It also works asynchronously, which makes <a href="http://slick.lightbend.com/"  class="external-link" target="_blank" rel="noopener">Slick</a> a perfect library for reactive applications</p>
+<h3 id="what-was-the-content">
+  What was the content?
+  <a class="heading-link" href="#what-was-the-content">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The main purpose of this talk was to introduce the core concepts to start working with <a href="http://slick.lightbend.com/"  class="external-link" target="_blank" rel="noopener">Slick</a>. To do it, we show how this library offers all database data as collections (<code>Collections</code>) from Scala, and what the advantages are of managing this collections from a functional programming point of view.</p>
+<p>The content of the presentation was:</p>
+<ol>
+<li>What is Slick?</li>
+<li>Plain SQL</li>
+<li>Slick DSL</li>
+</ol>
+<ul>
+<li>Defining our Schema</li>
+<li>Slick Operations</li>
+<li>Operating with database
+<ul>
+<li>Selecting data</li>
+<li>Inserting data</li>
+<li>Deleting data</li>
+<li>Updating data</li>
+</ul>
+</li>
+</ul>
+<ol start="4">
+<li>Combining Actions</li>
+</ol>
+<h5 id="some-pictures-from-the-event">
+  Some pictures from the event
+  <a class="heading-link" href="#some-pictures-from-the-event">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h5>
+<img style="display: block; margin-left: auto; margin-right: auto" src="https://jesusmtnez.es/images/slick-101/inserting-data.jpeg">
+<img style="display: block; margin-left: auto; margin-right: auto" src="https://jesusmtnez.es/images/slick-101/inserting-data-2.jpeg">
+<img style="display: block; margin-left: auto; margin-right: auto" src="https://jesusmtnez.es/images/slick-101/selecting-data.jpeg">
+<h3 id="links">
+  Links
+  <a class="heading-link" href="#links">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>Slides: <a href="https://goo.gl/4d5WQ1"  class="external-link" target="_blank" rel="noopener">https://goo.gl/4d5WQ1</a></li>
+<li>Event link: <a href="https://www.meetup.com/Scala-Programming-Madrid/events/236355445/"  class="external-link" target="_blank" rel="noopener">https://www.meetup.com/Scala-Programming-Madrid/events/236355445/</a></li>
+</ul>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script>
+  window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "jesusmtnez-gitlab-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    
+    document.addEventListener('themeChanged', function (e) { 
+        if (document.readyState == 'complete') {
+          DISQUS.reset({ reload: true, config: disqus_config });
+        }
+    });
+</script>
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+    integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+    integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2017 -
+    
+    2024
+     Jesús Martínez-B. H. 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="https://jesusmtnez.es/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-121213323-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
